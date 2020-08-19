@@ -5,6 +5,8 @@ using UnityEngine;
 public class BtnBehaviour : MonoBehaviour
 {
     private AudioSource _audioSource;
+    [SerializeField]
+    private GameObject _particleFx;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,5 +23,6 @@ public class BtnBehaviour : MonoBehaviour
     {
         Debug.Log("Clicado");
         _audioSource.PlayOneShot(_audioSource.clip);
+        Instantiate(_particleFx, transform.position, transform.rotation);
     }
 }

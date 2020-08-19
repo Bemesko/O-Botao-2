@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 168845111}
   - component: {fileID: 168845110}
   - component: {fileID: 168845113}
+  - component: {fileID: 168845114}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -159,7 +160,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1703.1163, y: 901.40717}
+  m_SizeDelta: {x: 1115.4738, y: 406.26373}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &168845110
 MonoBehaviour:
@@ -348,6 +349,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &168845114
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168845108}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 96a5a71ee5485b049ae982ac775f4d5a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,8 +518,8 @@ Canvas:
   m_GameObject: {fileID: 1204799025}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 963194227}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -765,3 +785,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33be488a66a69a24db07e61890f63d12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _particleFx: {fileID: 2159826666980982000, guid: d212ad0991a226647a389bf779a86931,
+    type: 3}
